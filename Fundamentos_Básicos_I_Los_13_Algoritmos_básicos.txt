@@ -127,7 +127,7 @@ console.log(negativos());
 }
 console.log(maxMinAvg([1,5,10,-2]));
 --------------------------------------------------------------------------------------------
-12.-function cuadrados(){
+12.-function primeroUltimo(){
     var arreglo=[1,2,3,6,5,10];
     
 
@@ -140,7 +140,7 @@ console.log(maxMinAvg([1,5,10,-2]));
     return arreglo;
 
 }
-console.log(cuadrados());
+console.log(primeroUltimo());
 
 -------------------------------------------------------------------
 13.-function cambiarNombre(arr){
