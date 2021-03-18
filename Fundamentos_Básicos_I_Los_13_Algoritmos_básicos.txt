@@ -1,0 +1,156 @@
+1.-function numeros(){
+    for (var i=1; i<=255; i++)
+    console.log("x=",i);
+}
+numeros(1);
+-------------------------------
+2.-function sumaPares(){
+    var suma =0;
+    for (var i=0; i<=1000; i+=2){
+        suma = suma + i;               
+    }
+    return suma;
+}
+console.log(sumaPares());
+----------------------------------
+3.-function sumaImpares(){
+    var suma=0;
+    for (var i=1; i<=10; i+=2){
+
+        suma = suma + i;
+    }
+    return suma;
+
+}
+console.log(sumaImpares());
+----------------------------------
+4.-function sum(){
+    var r=[1,2,5,3,3];
+    var suma=0;
+    for (var s=0; s<r.length; s++){
+        suma = r[s]+suma;
+    }
+    return suma;
+}
+console.log(sum());
+--------------------------------------
+5.-function mayor(){
+    var r= [10,2,35,34,2];
+    var buscar=0;
+    for (var i=0; i<r.length;i++){
+        if (r[i]>buscar){
+            buscar =r[i];
+        }
+    }
+    return buscar;
+}
+console.log(mayor());
+--------------------------------------
+6.-function promedio(){
+    var r=[7,2,5,8,10];
+    var suma=0;
+    for (var i=0;i<r.length; i++){
+        suma=r[i]+suma;
+    }
+    x=suma/r.length;
+    return(x);
+}
+console.log(promedio());
+-------------------------------------
+7.-function numImpar(){
+    var arreglo=[];
+    for (var i=0; i<=50;i++){ 
+        if(i%2==1){
+            arreglo.push(i);            
+        }           
+    }
+    return arreglo;  
+}
+console.log(numImpar());
+--------------------------------------
+8.-function mayores(){
+    var r = [40,2,36,34,42];
+    var y=35;
+    var buscar=0;
+    for (var i=0; i<r.length;i++){
+        if (r[i]>y){
+            buscar=1+buscar;            
+            console.log('Numeros mayores que variable Y:',r[i]);            
+        }
+    }
+    return buscar;
+
+}
+console.log(mayores());
+--------------------------------------------------------------------
+9.-function cuadrados(){
+    var arreglo=[1,2,3,6,5,10];
+    var resultado=0;
+
+    for (var i=0;i<arreglo.length; i++){
+        resultado=arreglo[i]*arreglo[i];
+        arreglo[i]=resultado
+    }
+
+    return arreglo;
+
+}
+console.log(cuadrados());
+---------------------------------------------------------
+10.-function negativos(){
+    var m=[1,5,10,-2];
+    for (var n=0; n<m.length;n++){
+        if (m[n]<0){
+            m[n]=0;
+        }
+    }
+    return m;
+}
+console.log(negativos());
+------------------------------------------------------------
+11.-function maxMinAvg(arr){
+    let max=arr[0];
+    let min =arr[0];
+    let suma =0;
+
+    for (var x=0; x <arr.length;x++){
+    if (min >arr [x]){
+        min=arr[x];
+    }
+    if( max < arr[x]){
+        max =arr[x];
+    }
+    suma+=arr[x];
+    }
+    let promedio=suma/arr.length;
+    return ['este es el max:',max,'este es el mínimo', min,'este es el promedio', promedio];   
+}
+console.log(maxMinAvg([1,5,10,-2]));
+--------------------------------------------------------------------------------------------
+12.-function cuadrados(){
+    var arreglo=[1,2,3,6,5,10];
+    
+
+    for (var i=0;i<arreglo.length; i++){
+        arreglo[0]=arreglo[5];
+           
+        
+    }
+
+    return arreglo;
+
+}
+console.log(cuadrados());
+
+-------------------------------------------------------------------
+13.-function cambiarNombre(arr){
+    for (var i=0;i<arr.length;i++){
+        if(arr[i]<0){
+            arr[i]='Dojo';
+        }
+    }
+    return arr;
+}
+console.log(cambiarNombre([-1,-3,2]));
+
+
